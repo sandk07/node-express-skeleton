@@ -1,8 +1,12 @@
 // Global imports
 var express  = require('express');
+
 // Import our custom created rotes
+// Since this module is a custom module we navigate to the module location using
+// a  ./ notation. For node modules we dont have to do this.
 var routes  = require('./app/routes');
 var app      = express();
+
 // Configure the ports
 var port     = process.env.PORT || 8080;
 
